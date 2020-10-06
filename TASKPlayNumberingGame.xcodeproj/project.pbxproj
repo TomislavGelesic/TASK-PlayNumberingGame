@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6060732C252C50C200E4C620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6060732B252C50C200E4C620 /* AppDelegate.swift */; };
+		6060732E252C50C200E4C620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6060732D252C50C200E4C620 /* SceneDelegate.swift */; };
+		60607330252C50C200E4C620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6060732F252C50C200E4C620 /* ViewController.swift */; };
+		60607333252C50C200E4C620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60607331252C50C200E4C620 /* Main.storyboard */; };
+		60607335252C50C300E4C620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60607334252C50C300E4C620 /* Assets.xcassets */; };
+		60607338252C50C300E4C620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60607336252C50C300E4C620 /* LaunchScreen.storyboard */; };
+		60607343252C50C300E4C620 /* TASKPlayNumberingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60607342252C50C300E4C620 /* TASKPlayNumberingGameTests.swift */; };
+		6060734E252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6060734D252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6060733F252C50C300E4C620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60607320252C50C200E4C620 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60607327252C50C200E4C620;
+			remoteInfo = TASKPlayNumberingGame;
+		};
+		6060734A252C50C300E4C620 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60607320252C50C200E4C620 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60607327252C50C200E4C620;
+			remoteInfo = TASKPlayNumberingGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		60607328252C50C200E4C620 /* TASKPlayNumberingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TASKPlayNumberingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6060732B252C50C200E4C620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6060732D252C50C200E4C620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6060732F252C50C200E4C620 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60607332252C50C200E4C620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60607334252C50C300E4C620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60607337252C50C300E4C620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60607339252C50C300E4C620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6060733E252C50C300E4C620 /* TASKPlayNumberingGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TASKPlayNumberingGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60607342252C50C300E4C620 /* TASKPlayNumberingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASKPlayNumberingGameTests.swift; sourceTree = "<group>"; };
+		60607344252C50C300E4C620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60607349252C50C300E4C620 /* TASKPlayNumberingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TASKPlayNumberingGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6060734D252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASKPlayNumberingGameUITests.swift; sourceTree = "<group>"; };
+		6060734F252C50C300E4C620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60607325252C50C200E4C620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6060733B252C50C300E4C620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60607346252C50C300E4C620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6060731F252C50C200E4C620 = {
+			isa = PBXGroup;
+			children = (
+				6060732A252C50C200E4C620 /* TASKPlayNumberingGame */,
+				60607341252C50C300E4C620 /* TASKPlayNumberingGameTests */,
+				6060734C252C50C300E4C620 /* TASKPlayNumberingGameUITests */,
+				60607329252C50C200E4C620 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60607329252C50C200E4C620 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60607328252C50C200E4C620 /* TASKPlayNumberingGame.app */,
+				6060733E252C50C300E4C620 /* TASKPlayNumberingGameTests.xctest */,
+				60607349252C50C300E4C620 /* TASKPlayNumberingGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6060732A252C50C200E4C620 /* TASKPlayNumberingGame */ = {
+			isa = PBXGroup;
+			children = (
+				6060732B252C50C200E4C620 /* AppDelegate.swift */,
+				6060732D252C50C200E4C620 /* SceneDelegate.swift */,
+				6060732F252C50C200E4C620 /* ViewController.swift */,
+				60607331252C50C200E4C620 /* Main.storyboard */,
+				60607334252C50C300E4C620 /* Assets.xcassets */,
+				60607336252C50C300E4C620 /* LaunchScreen.storyboard */,
+				60607339252C50C300E4C620 /* Info.plist */,
+			);
+			path = TASKPlayNumberingGame;
+			sourceTree = "<group>";
+		};
+		60607341252C50C300E4C620 /* TASKPlayNumberingGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				60607342252C50C300E4C620 /* TASKPlayNumberingGameTests.swift */,
+				60607344252C50C300E4C620 /* Info.plist */,
+			);
+			path = TASKPlayNumberingGameTests;
+			sourceTree = "<group>";
+		};
+		6060734C252C50C300E4C620 /* TASKPlayNumberingGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6060734D252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift */,
+				6060734F252C50C300E4C620 /* Info.plist */,
+			);
+			path = TASKPlayNumberingGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60607327252C50C200E4C620 /* TASKPlayNumberingGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60607352252C50C300E4C620 /* Build configuration list for PBXNativeTarget "TASKPlayNumberingGame" */;
+			buildPhases = (
+				60607324252C50C200E4C620 /* Sources */,
+				60607325252C50C200E4C620 /* Frameworks */,
+				60607326252C50C200E4C620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TASKPlayNumberingGame;
+			productName = TASKPlayNumberingGame;
+			productReference = 60607328252C50C200E4C620 /* TASKPlayNumberingGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6060733D252C50C300E4C620 /* TASKPlayNumberingGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60607355252C50C300E4C620 /* Build configuration list for PBXNativeTarget "TASKPlayNumberingGameTests" */;
+			buildPhases = (
+				6060733A252C50C300E4C620 /* Sources */,
+				6060733B252C50C300E4C620 /* Frameworks */,
+				6060733C252C50C300E4C620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60607340252C50C300E4C620 /* PBXTargetDependency */,
+			);
+			name = TASKPlayNumberingGameTests;
+			productName = TASKPlayNumberingGameTests;
+			productReference = 6060733E252C50C300E4C620 /* TASKPlayNumberingGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		60607348252C50C300E4C620 /* TASKPlayNumberingGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60607358252C50C300E4C620 /* Build configuration list for PBXNativeTarget "TASKPlayNumberingGameUITests" */;
+			buildPhases = (
+				60607345252C50C300E4C620 /* Sources */,
+				60607346252C50C300E4C620 /* Frameworks */,
+				60607347252C50C300E4C620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6060734B252C50C300E4C620 /* PBXTargetDependency */,
+			);
+			name = TASKPlayNumberingGameUITests;
+			productName = TASKPlayNumberingGameUITests;
+			productReference = 60607349252C50C300E4C620 /* TASKPlayNumberingGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60607320252C50C200E4C620 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					60607327252C50C200E4C620 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					6060733D252C50C300E4C620 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 60607327252C50C200E4C620;
+					};
+					60607348252C50C300E4C620 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 60607327252C50C200E4C620;
+					};
+				};
+			};
+			buildConfigurationList = 60607323252C50C200E4C620 /* Build configuration list for PBXProject "TASKPlayNumberingGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6060731F252C50C200E4C620;
+			productRefGroup = 60607329252C50C200E4C620 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60607327252C50C200E4C620 /* TASKPlayNumberingGame */,
+				6060733D252C50C300E4C620 /* TASKPlayNumberingGameTests */,
+				60607348252C50C300E4C620 /* TASKPlayNumberingGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60607326252C50C200E4C620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60607338252C50C300E4C620 /* LaunchScreen.storyboard in Resources */,
+				60607335252C50C300E4C620 /* Assets.xcassets in Resources */,
+				60607333252C50C200E4C620 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6060733C252C50C300E4C620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60607347252C50C300E4C620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60607324252C50C200E4C620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60607330252C50C200E4C620 /* ViewController.swift in Sources */,
+				6060732C252C50C200E4C620 /* AppDelegate.swift in Sources */,
+				6060732E252C50C200E4C620 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6060733A252C50C300E4C620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60607343252C50C300E4C620 /* TASKPlayNumberingGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60607345252C50C300E4C620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6060734E252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60607340252C50C300E4C620 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60607327252C50C200E4C620 /* TASKPlayNumberingGame */;
+			targetProxy = 6060733F252C50C300E4C620 /* PBXContainerItemProxy */;
+		};
+		6060734B252C50C300E4C620 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60607327252C50C200E4C620 /* TASKPlayNumberingGame */;
+			targetProxy = 6060734A252C50C300E4C620 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60607331252C50C200E4C620 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60607332252C50C200E4C620 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60607336252C50C300E4C620 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60607337252C50C300E4C620 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60607350252C50C300E4C620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60607351252C50C300E4C620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60607353252C50C300E4C620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TASKPlayNumberingGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TASKPlayNumberingGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60607354252C50C300E4C620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TASKPlayNumberingGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TASKPlayNumberingGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		60607356252C50C300E4C620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TASKPlayNumberingGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TASKPlayNumberingGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TASKPlayNumberingGame.app/TASKPlayNumberingGame";
+			};
+			name = Debug;
+		};
+		60607357252C50C300E4C620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TASKPlayNumberingGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TASKPlayNumberingGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TASKPlayNumberingGame.app/TASKPlayNumberingGame";
+			};
+			name = Release;
+		};
+		60607359252C50C300E4C620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TASKPlayNumberingGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TASKPlayNumberingGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TASKPlayNumberingGame;
+			};
+			name = Debug;
+		};
+		6060735A252C50C300E4C620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TASKPlayNumberingGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TASKPlayNumberingGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TASKPlayNumberingGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60607323252C50C200E4C620 /* Build configuration list for PBXProject "TASKPlayNumberingGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60607350252C50C300E4C620 /* Debug */,
+				60607351252C50C300E4C620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60607352252C50C300E4C620 /* Build configuration list for PBXNativeTarget "TASKPlayNumberingGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60607353252C50C300E4C620 /* Debug */,
+				60607354252C50C300E4C620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60607355252C50C300E4C620 /* Build configuration list for PBXNativeTarget "TASKPlayNumberingGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60607356252C50C300E4C620 /* Debug */,
+				60607357252C50C300E4C620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60607358252C50C300E4C620 /* Build configuration list for PBXNativeTarget "TASKPlayNumberingGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60607359252C50C300E4C620 /* Debug */,
+				6060735A252C50C300E4C620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60607320252C50C200E4C620 /* Project object */;
+}
