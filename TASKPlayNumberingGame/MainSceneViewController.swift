@@ -98,11 +98,14 @@ class MainSceneViewController: UIViewController {
     
     //MARK: Constraints
     func setupConstraints() {
+        
         let textFieldLeadingConst:CGFloat = 10
         let textFieldTrailingConst:CGFloat = -10
         let labelLeadingConst:CGFloat = 30
         let labelTrailingConst:CGFloat = -30
         
+        //MARK: Question 1
+        //moze ovaj dio krace, kao za activate?
         numOfPlayersLabel.translatesAutoresizingMaskIntoConstraints = false
         numOfPlayersTextField.translatesAutoresizingMaskIntoConstraints = false
         directionLabel.translatesAutoresizingMaskIntoConstraints = false
