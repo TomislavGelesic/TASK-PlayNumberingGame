@@ -41,17 +41,34 @@ class MainSceneViewController: UIViewController {
         numOfPlayersLabel.font = UIFont(name: numOfPlayersLabel.font.fontName, size: 10)
         view.addSubview(numOfPlayersLabel)
         
-        directionLabel.text = "Change direction:"
+        //add superscript *
+        let fontSuper = UIFont(name: numOfPlayersLabel.font.fontName, size:10)
+        var editedPart = NSMutableAttributedString(string: "")
+        var finalPart = NSMutableAttributedString(string: "")
+        
+        editedPart = NSMutableAttributedString(string: "Change direction*")
+        editedPart.addAttributes([NSAttributedString.Key.font: fontSuper!], range: NSRange(location: 16, length: 1))
+        finalPart.append(editedPart)
+        directionLabel.attributedText = finalPart
         directionLabel.textColor = .orange
         directionLabel.font = UIFont(name: directionLabel.font.fontName, size: 10)
         view.addSubview(directionLabel)
         
-        skipPlayerLabel.text = "Skip player"
+        finalPart = NSMutableAttributedString(string: "")
+        editedPart = NSMutableAttributedString(string: "Skip player*")
+        editedPart.addAttributes([NSAttributedString.Key.font: fontSuper!], range: NSRange(location: 11, length: 1))
+        finalPart.append(editedPart)
+        skipPlayerLabel.attributedText = finalPart
         skipPlayerLabel.textColor = .orange
         skipPlayerLabel.font = UIFont(name: skipPlayerLabel.font.fontName, size: 10)
         view.addSubview(skipPlayerLabel)
         
-        skipPlayerDescLabel.text = "by what number the current nuber should be divisible"
+        
+        finalPart = NSMutableAttributedString(string: "")
+        editedPart = NSMutableAttributedString(string: "*by what number the current nuber should be divisible")
+        editedPart.addAttributes([NSAttributedString.Key.font: fontSuper!], range: NSRange(location: 1, length: 0))
+        finalPart.append(editedPart)
+        skipPlayerDescLabel.attributedText = finalPart
         skipPlayerDescLabel.textColor = .orange
         skipPlayerDescLabel.font = UIFont(name: skipPlayerDescLabel.font.fontName, size: 10)
         view.addSubview(skipPlayerDescLabel)
@@ -68,13 +85,14 @@ class MainSceneViewController: UIViewController {
     func setupTextFields() {
         numOfPlayersTextField.placeholder = "Enter a number"
         numOfPlayersTextField.backgroundColor = .lightGray
-        
         view.addSubview(numOfPlayersTextField)
         
         directionTextField.placeholder = "Enter a number"
+        directionTextField.backgroundColor = .lightGray
         view.addSubview(directionTextField)
         
         skipPlayerTextField.placeholder = "Enter a number"
+        skipPlayerTextField.backgroundColor = .lightGray
         view.addSubview(skipPlayerTextField)
     }
     
@@ -97,37 +115,37 @@ class MainSceneViewController: UIViewController {
             numOfPlayersLabel.topAnchor.constraint(equalTo: view.topAnchor,constant: 100),
             numOfPlayersLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: labelLeadingConst),
             numOfPlayersLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: labelTrailingConst),
-            numOfPlayersLabel.heightAnchor.constraint(equalToConstant: 20),
+            numOfPlayersLabel.heightAnchor.constraint(equalToConstant: 12),
             
             numOfPlayersTextField.topAnchor.constraint(equalTo: numOfPlayersLabel.bottomAnchor,constant: 5),
             numOfPlayersTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: textFieldLeadingConst),
             numOfPlayersTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: textFieldTrailingConst),
-            numOfPlayersTextField.heightAnchor.constraint(equalToConstant: 50),
+            numOfPlayersTextField.heightAnchor.constraint(equalToConstant: 44),
             
             directionLabel.topAnchor.constraint(equalTo: numOfPlayersTextField.bottomAnchor, constant: 30),
             directionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: labelLeadingConst),
             directionLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: labelTrailingConst),
-            directionLabel.heightAnchor.constraint(equalToConstant: 20),
+            directionLabel.heightAnchor.constraint(equalToConstant: 12),
             
             directionTextField.topAnchor.constraint(equalTo: directionLabel.bottomAnchor,constant: 5),
             directionTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: textFieldLeadingConst),
             directionTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: textFieldTrailingConst),
-            directionTextField.heightAnchor.constraint(equalToConstant: 50),
+            directionTextField.heightAnchor.constraint(equalToConstant: 44),
             
             skipPlayerLabel.topAnchor.constraint(equalTo: directionTextField.bottomAnchor,constant: 30),
             skipPlayerLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: labelLeadingConst),
             skipPlayerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: labelTrailingConst),
-            skipPlayerLabel.heightAnchor.constraint(equalToConstant: 20),
+            skipPlayerLabel.heightAnchor.constraint(equalToConstant: 12),
             
             skipPlayerTextField.topAnchor.constraint(equalTo: skipPlayerLabel.bottomAnchor,constant: 5),
             skipPlayerTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: textFieldLeadingConst),
             skipPlayerTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: textFieldTrailingConst),
-            skipPlayerTextField.heightAnchor.constraint(equalToConstant: 50),
+            skipPlayerTextField.heightAnchor.constraint(equalToConstant: 44),
             
             skipPlayerDescLabel.topAnchor.constraint(equalTo: skipPlayerTextField.bottomAnchor, constant: 30),
             skipPlayerDescLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: labelLeadingConst),
             skipPlayerDescLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: labelTrailingConst),
-            skipPlayerDescLabel.heightAnchor.constraint(equalToConstant: 20),
+            skipPlayerDescLabel.heightAnchor.constraint(equalToConstant: 12),
             
             
         ])
