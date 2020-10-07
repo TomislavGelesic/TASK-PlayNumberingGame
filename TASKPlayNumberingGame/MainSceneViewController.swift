@@ -26,12 +26,10 @@ class MainSceneViewController: UIViewController {
         view.backgroundColor = .white
         
         setupLabels()
-        setupButtons()
+        setupButton()
         setupTextFields()
         
-        
         setupConstraints()
-        
     }
     
     //MARK: Set Ups
@@ -74,10 +72,10 @@ class MainSceneViewController: UIViewController {
         view.addSubview(skipPlayerDescLabel)
     }
     
-    func setupButtons() {
+    func setupButton() {
         resultButton.backgroundColor = .orange
         resultButton.setTitle("Result", for: .normal)
-        resultButton.setTitleColor(.white, for: .normal)
+        resultButton.setTitleColor(.black, for: .normal)
         resultButton.addTarget(self, action: #selector(resultButtonTapped), for: .touchUpInside)
         view.addSubview(resultButton)
     }
@@ -104,8 +102,6 @@ class MainSceneViewController: UIViewController {
         let labelLeadingConst:CGFloat = 30
         let labelTrailingConst:CGFloat = -30
         
-        //MARK: Question 1
-        //moze ovaj dio krace, kao za activate?
         numOfPlayersLabel.translatesAutoresizingMaskIntoConstraints = false
         numOfPlayersTextField.translatesAutoresizingMaskIntoConstraints = false
         directionLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -113,6 +109,7 @@ class MainSceneViewController: UIViewController {
         skipPlayerLabel.translatesAutoresizingMaskIntoConstraints = false
         skipPlayerTextField.translatesAutoresizingMaskIntoConstraints = false
         skipPlayerDescLabel.translatesAutoresizingMaskIntoConstraints = false
+        resultButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             numOfPlayersLabel.topAnchor.constraint(equalTo: view.topAnchor,constant: 100),
@@ -150,11 +147,14 @@ class MainSceneViewController: UIViewController {
             skipPlayerDescLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: labelTrailingConst),
             skipPlayerDescLabel.heightAnchor.constraint(equalToConstant: 12),
             
-            
+            resultButton.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            resultButton.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            resultButton.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            resultButton.heightAnchor.constraint(equalToConstant: 44),
         ])
-        
-        
     }
+    
+    //MARK: Functions
     
     @objc func resultButtonTapped(){
         
