@@ -122,13 +122,43 @@ class MainScreenViewController: UIViewController {
     
     @objc func resultButtonTapped(){
         print("ResultButtonTapped")
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        let resultScreen = ResultScreenViewController()
+        
+        
+        
+        if isNumber(string: inputNumberOfPlayers.textField.text ?? ""),isNumber(string: inputDirectionNumber.textField.text ?? ""),isNumber(string: inputSkipNumber.textField.text ?? ""){
+            let numberOfPlayers = Int(inputNumberOfPlayers.textField.text!) ?? 0
+            let changeDirectionNumber = Int(inputDirectionNumber.textField.text!) ?? 0
+            let skipPlayerNumber = Int(inputSkipNumber.textField.text!) ?? 0
+            
+            var i = 0
+            var winnerCounter = 0
+            var skipCounter = 0
+            var directionCouter = 0
+            var d = "+"
+            while i < numberOfPlayers {
+                if d == "-" { winnerCounter -= 1 }
+                else { winnerCounter += 1 }
+                
+                if (i % skipPlayerNumber) != 0 {
+                    if (i % changeDirectionNumber) == 0 {
+                        if d == "-" { d = "+" }
+                        else { d = "-" }
+                    } else {directionCouter += 1}
+                } else { skipCounter += 1 }
+                i += 1
+            }
+            
+            
+            
+        }
+        
+        
+        
+        
         
     }
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         inputNumberOfPlayers.textField.resignFirstResponder()
@@ -136,9 +166,15 @@ class MainScreenViewController: UIViewController {
         inputSkipNumber.textField.resignFirstResponder()
     }
     
+    //MARK: Private functions
+    
+    private func isNumber(string: String) -> Bool {
+        return CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: string))
+    }
+    
     
 }
-
+//MARK: Extensions
 
 extension MainScreenViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
