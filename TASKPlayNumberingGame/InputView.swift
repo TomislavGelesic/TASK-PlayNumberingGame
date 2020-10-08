@@ -33,16 +33,16 @@ class InputView: UIView, UITextFieldDelegate {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupStack()
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupStack()
+        setupViews()
     }
     
     //MARK: Private functions
-    private func setupStack(){
+    private func setupViews(){
         self.addSubview(label)
         self.addSubview(textField)
         
@@ -50,20 +50,9 @@ class InputView: UIView, UITextFieldDelegate {
         setTextFieldConstraints()
     }
     
-    //MARK: UITextFieldDelegate
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        //Hide the keyboard
-        textField.resignFirstResponder()
-        return true
-    }
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-    }
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-    }
-    
     //MARK: Functions
+   
+    
     func setLabelConstraints() {
         label.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         label.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10).isActive = true

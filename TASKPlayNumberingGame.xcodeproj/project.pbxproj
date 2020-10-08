@@ -13,7 +13,9 @@
 		60607338252C50C300E4C620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60607336252C50C300E4C620 /* LaunchScreen.storyboard */; };
 		60607343252C50C300E4C620 /* TASKPlayNumberingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60607342252C50C300E4C620 /* TASKPlayNumberingGameTests.swift */; };
 		6060734E252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6060734D252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift */; };
-		60607368252C6EE700E4C620 /* MainSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60607367252C6EE700E4C620 /* MainSceneViewController.swift */; };
+		60607368252C6EE700E4C620 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60607367252C6EE700E4C620 /* MainScreenViewController.swift */; };
+		60ABDBEC252F169600B75324 /* ResultScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ABDBEB252F169600B75324 /* ResultScreenViewController.swift */; };
+		60ABDBF4252F26CD00B75324 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ABDBF3252F26CD00B75324 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,9 @@
 		60607349252C50C300E4C620 /* TASKPlayNumberingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TASKPlayNumberingGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6060734D252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASKPlayNumberingGameUITests.swift; sourceTree = "<group>"; };
 		6060734F252C50C300E4C620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60607367252C6EE700E4C620 /* MainSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneViewController.swift; sourceTree = "<group>"; };
+		60607367252C6EE700E4C620 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		60ABDBEB252F169600B75324 /* ResultScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenViewController.swift; sourceTree = "<group>"; };
+		60ABDBF3252F26CD00B75324 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 				60607334252C50C300E4C620 /* Assets.xcassets */,
 				60607336252C50C300E4C620 /* LaunchScreen.storyboard */,
 				60607339252C50C300E4C620 /* Info.plist */,
-				60607367252C6EE700E4C620 /* MainSceneViewController.swift */,
+				60607367252C6EE700E4C620 /* MainScreenViewController.swift */,
 				6024610D252DFAA1003B95E3 /* InputView.swift */,
+				60ABDBEB252F169600B75324 /* ResultScreenViewController.swift */,
+				60ABDBF3252F26CD00B75324 /* ResultView.swift */,
 			);
 			path = TASKPlayNumberingGame;
 			sourceTree = "<group>";
@@ -254,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60607368252C6EE700E4C620 /* MainSceneViewController.swift in Sources */,
+				60607368252C6EE700E4C620 /* MainScreenViewController.swift in Sources */,
 				6024610E252DFAA1003B95E3 /* InputView.swift in Sources */,
+				60ABDBF4252F26CD00B75324 /* ResultView.swift in Sources */,
+				60ABDBEC252F169600B75324 /* ResultScreenViewController.swift in Sources */,
 				6060732C252C50C200E4C620 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,8 @@
 
 import UIKit
 
-class MainSceneViewController: UIViewController {
+class MainScreenViewController: UIViewController {
+    
     //MARK: Properties
     
     let inputNumberOfPlayers:InputView = {
@@ -90,6 +91,11 @@ class MainSceneViewController: UIViewController {
         view.addSubview(resultButton)
         
         setupConstraints()
+        
+        
+        inputNumberOfPlayers.textField.delegate  = self
+        inputDirectionNumber.textField.delegate  = self
+        inputSkipNumber.textField.delegate = self
     }
     
     
@@ -115,8 +121,28 @@ class MainSceneViewController: UIViewController {
     //MARK: Functions
     
     @objc func resultButtonTapped(){
-        print("result button tapped")
+        print("ResultButtonTapped")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        let resultScreen = ResultScreenViewController()
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        inputNumberOfPlayers.textField.resignFirstResponder()
+        inputDirectionNumber.textField.resignFirstResponder()
+        inputSkipNumber.textField.resignFirstResponder()
     }
     
     
+}
+
+
+extension MainScreenViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
