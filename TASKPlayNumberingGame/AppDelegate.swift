@@ -13,10 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let firstScreen = MainSceneViewController()
-        firstScreen.title = "PLAY NUMBERING GAME"
+        let inputScreen = MainSceneViewController()
+        inputScreen.title = "PLAY NUMBERING GAME"
         
-        let navigationController = UINavigationController(rootViewController: firstScreen)
+        let navigationController = UINavigationController(rootViewController: inputScreen)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
