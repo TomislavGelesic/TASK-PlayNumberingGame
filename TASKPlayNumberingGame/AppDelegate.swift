@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let inputScreen = MainScreenViewController()
+        let inputScreen = InputViewController()
         inputScreen.title = "PLAY NUMBERING GAME"
         
         let navigationController = UINavigationController(rootViewController: inputScreen)

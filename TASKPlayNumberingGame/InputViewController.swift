@@ -4,10 +4,19 @@
 //
 //  Created by Tomislav Gelesic on 06/10/2020.
 //
+//MARK: TO do
+/*
+ 
+ -check input field validity - show alert warning
+ 
+ 
+ 
+ */
+
 
 import UIKit
 
-class MainScreenViewController: UIViewController {
+class InputViewController: UIViewController {
     
     //MARK: Properties
     
@@ -121,39 +130,47 @@ class MainScreenViewController: UIViewController {
     //MARK: Functions
     
     @objc func resultButtonTapped(){
-        print("ResultButtonTapped")
-        
-        
-        
         if isNumber(string: inputNumberOfPlayers.textField.text ?? ""),isNumber(string: inputDirectionNumber.textField.text ?? ""),isNumber(string: inputSkipNumber.textField.text ?? ""){
             let numberOfPlayers = Int(inputNumberOfPlayers.textField.text!) ?? 0
             let changeDirectionNumber = Int(inputDirectionNumber.textField.text!) ?? 0
             let skipPlayerNumber = Int(inputSkipNumber.textField.text!) ?? 0
             
-            var i = 0
+            var i = 1
             var winnerCounter = 0
             var skipCounter = 0
             var directionCouter = 0
             var d = "+"
-            while i < numberOfPlayers {
-                if d == "-" { winnerCounter -= 1 }
-                else { winnerCounter += 1 }
+            while i <= numberOfPlayers {
                 
-                if (i % skipPlayerNumber) != 0 {
-                    if (i % changeDirectionNumber) == 0 {
-                        if d == "-" { d = "+" }
-                        else { d = "-" }
-                    } else {directionCouter += 1}
-                } else { skipCounter += 1 }
+                if (i % skipPlayerNumber) == 0 {
+                    skipCounter += 1
+                    if d == "-" { winnerCounter -= 2 }
+                    else { winnerCounter += 2 }
+                } else {
+                    if d == "-" { winnerCounter -= 1 }
+                    else { winnerCounter += 1 }
+                }
+                
+                if (i % changeDirectionNumber) == 0 {
+                    if d == "-" { d = "+" }
+                    else { d = "-" }
+                    directionCouter += 1
+                }
                 i += 1
             }
             
             
+            let resultViewController = ResultViewController(winner: winnerCounter, skipped: skipCounter, changedDirection: directionCouter)
+            resultViewController.parentImage.image = self.navigationController?.view.asImage()
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated: false, completion: nil)
+            
+            
+            
+            
+            
             
         }
-        
-        
-        
         
         
     }
@@ -176,7 +193,7 @@ class MainScreenViewController: UIViewController {
 }
 //MARK: Extensions
 
-extension MainScreenViewController: UITextFieldDelegate{
+extension InputViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

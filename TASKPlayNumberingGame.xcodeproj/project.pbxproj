@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6024610E252DFAA1003B95E3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6024610D252DFAA1003B95E3 /* InputView.swift */; };
+		603B4A8725344F8200296FB7 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603B4A8625344F8200296FB7 /* ScoreView.swift */; };
+		603B4A922534635D00296FB7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603B4A912534635D00296FB7 /* ResultViewController.swift */; };
 		6060732C252C50C200E4C620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6060732B252C50C200E4C620 /* AppDelegate.swift */; };
 		60607335252C50C300E4C620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60607334252C50C300E4C620 /* Assets.xcassets */; };
 		60607338252C50C300E4C620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60607336252C50C300E4C620 /* LaunchScreen.storyboard */; };
 		60607343252C50C300E4C620 /* TASKPlayNumberingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60607342252C50C300E4C620 /* TASKPlayNumberingGameTests.swift */; };
 		6060734E252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6060734D252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift */; };
-		60607368252C6EE700E4C620 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60607367252C6EE700E4C620 /* MainScreenViewController.swift */; };
-		60ABDBEC252F169600B75324 /* ResultScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ABDBEB252F169600B75324 /* ResultScreenViewController.swift */; };
-		60ABDBF4252F26CD00B75324 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ABDBF3252F26CD00B75324 /* ResultView.swift */; };
-		60ABDBFC252F336E00B75324 /* ResultPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ABDBFB252F336E00B75324 /* ResultPresentationController.swift */; };
+		60607368252C6EE700E4C620 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60607367252C6EE700E4C620 /* InputViewController.swift */; };
+		60ABDC0C252F4D7A00B75324 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ABDC0B252F4D7A00B75324 /* UIView+Snapshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		6024610D252DFAA1003B95E3 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		603B4A8625344F8200296FB7 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		603B4A912534635D00296FB7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		60607328252C50C200E4C620 /* TASKPlayNumberingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TASKPlayNumberingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6060732B252C50C200E4C620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60607334252C50C300E4C620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,10 +51,8 @@
 		60607349252C50C300E4C620 /* TASKPlayNumberingGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TASKPlayNumberingGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6060734D252C50C300E4C620 /* TASKPlayNumberingGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASKPlayNumberingGameUITests.swift; sourceTree = "<group>"; };
 		6060734F252C50C300E4C620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60607367252C6EE700E4C620 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
-		60ABDBEB252F169600B75324 /* ResultScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreenViewController.swift; sourceTree = "<group>"; };
-		60ABDBF3252F26CD00B75324 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		60ABDBFB252F336E00B75324 /* ResultPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresentationController.swift; sourceTree = "<group>"; };
+		60607367252C6EE700E4C620 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		60ABDC0B252F4D7A00B75324 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +107,11 @@
 				60607334252C50C300E4C620 /* Assets.xcassets */,
 				60607336252C50C300E4C620 /* LaunchScreen.storyboard */,
 				60607339252C50C300E4C620 /* Info.plist */,
-				60607367252C6EE700E4C620 /* MainScreenViewController.swift */,
+				60607367252C6EE700E4C620 /* InputViewController.swift */,
 				6024610D252DFAA1003B95E3 /* InputView.swift */,
-				60ABDBEB252F169600B75324 /* ResultScreenViewController.swift */,
-				60ABDBF3252F26CD00B75324 /* ResultView.swift */,
-				60ABDBFB252F336E00B75324 /* ResultPresentationController.swift */,
+				60ABDC0B252F4D7A00B75324 /* UIView+Snapshot.swift */,
+				603B4A8625344F8200296FB7 /* ScoreView.swift */,
+				603B4A912534635D00296FB7 /* ResultViewController.swift */,
 			);
 			path = TASKPlayNumberingGame;
 			sourceTree = "<group>";
@@ -263,12 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60ABDBFC252F336E00B75324 /* ResultPresentationController.swift in Sources */,
-				60607368252C6EE700E4C620 /* MainScreenViewController.swift in Sources */,
+				603B4A8725344F8200296FB7 /* ScoreView.swift in Sources */,
+				60607368252C6EE700E4C620 /* InputViewController.swift in Sources */,
+				603B4A922534635D00296FB7 /* ResultViewController.swift in Sources */,
 				6024610E252DFAA1003B95E3 /* InputView.swift in Sources */,
-				60ABDBF4252F26CD00B75324 /* ResultView.swift in Sources */,
-				60ABDBEC252F169600B75324 /* ResultScreenViewController.swift in Sources */,
 				6060732C252C50C200E4C620 /* AppDelegate.swift in Sources */,
+				60ABDC0C252F4D7A00B75324 /* UIView+Snapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
